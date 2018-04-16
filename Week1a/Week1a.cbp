@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="NAW.cpp" />
+		<Unit filename="NAW.hpp" />
+		<Unit filename="NAWArray.cpp" />
+		<Unit filename="NAWArray.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

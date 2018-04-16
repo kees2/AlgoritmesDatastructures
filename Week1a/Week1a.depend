@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1523875538 source:c:\users\kees\documents\github\algoritmesdatastructures\week1a\main.cpp
+	<iostream>
+	"NAWArray.hpp"
+
+1523875538 c:\users\kees\documents\github\algoritmesdatastructures\week1a\nawarray.hpp
+	"NAW.hpp"
+
+1523872914 c:\users\kees\documents\github\algoritmesdatastructures\week1a\naw.hpp
+	<string>
+
+1523872914 source:c:\users\kees\documents\github\algoritmesdatastructures\week1a\naw.cpp
+	"NAW.hpp"
+	<string.h>
+
+1523874591 source:c:\users\kees\documents\github\algoritmesdatastructures\week1a\nawarray.cpp
+	"NAWArray.hpp"
+	"NAW.hpp"
+	<iostream>
+
