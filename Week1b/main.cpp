@@ -1,4 +1,5 @@
 #include <iostream>
+#include "NAWArray.hpp"
 
 using namespace std;
 
