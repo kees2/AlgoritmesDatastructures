@@ -58,6 +58,15 @@ int NAWArray::searchAdresWoonplaats(string searchAdres, string searchWoonplaats)
     return -1;
 }
 
+int NAWArray::searchAdresWoonplaatsNaam(string searchAdres, string searchWoonplaats, string searchNaam){
+    for(int i = 0; i < arraySize; i++){
+        if(nawArray[i].hasAdres(searchAdres) && nawArray[i].hasWoonplaats(searchWoonplaats) && nawArray[i].hasNaam(searchNaam)){
+            return i;
+        }
+    }
+    return -1;
+}
+
 void NAWArray::removeNaamFirst(string removeNaam){
     int id;
     id = searchName(removeNaam);
@@ -139,10 +148,11 @@ void NAWArray::print(){
     }
 }
 
-int NAWArray::searchNaw(NAW naw){
+int NAWArray::searchNaw(string searchAdres, string searchWoonplaats, string searchNaam){
+    int currentNawIndex = searchAdresWoonplaatsNaam(searchAdres, searchWoonplaats, searchNaam);
     int index = arraySize / 2;
     while(index < arraySize){
-        int compare = naw.CompareTo(nawArray[index]);
+        int compare = nawArray[currentNawIndex].CompareTo(nawArray[index]);
         if(compare == 0){
             return index;
         }
@@ -154,16 +164,17 @@ int NAWArray::searchNaw(NAW naw){
         }
 
     }
-
     //return -1 als er geen naw gevonden is
     return -1;
-
-
 }
 
+void NAWArray::addNAW(string newNaam, string newAdres, string newWoonplaats){
+    int index = searchNaw(newAdres,newWoonplaats, newNaam );
+    NAW newNaw(newNaam, newAdres, newWoonplaats);
+    nawArray[arraySize] = newNaw;
+    arraySize++;
 
-
-
+}
 
 
 

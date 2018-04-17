@@ -17,10 +17,7 @@ NAW::~NAW(){
 }
 
 bool NAW::hasNaam(string searchNaam){
-    /*
-    if(strcmp(naam, searchNaam) == 0){
-        return 1;
-    }*/
+
     if(naam == searchNaam){
         return 1;
     }
@@ -31,9 +28,7 @@ bool NAW::hasAdres(string searchAdres){
     if(adres == searchAdres){
         return 1;
     }
-    /*if(strcmp(adres, searchAdres) == 0){
-        return 1;
-    }*/
+
     return 0;
 }
 
@@ -41,11 +36,11 @@ bool NAW::hasWoonplaats(string searchWoonplaats){
     if(woonplaats == searchWoonplaats){
         return 1;
     }
-    /*if(strcmp(woonplaats, searchWoonplaats) == 0){
-        return 1;
-    }*/
+
     return 0;
 }
+
+
 
 
 
