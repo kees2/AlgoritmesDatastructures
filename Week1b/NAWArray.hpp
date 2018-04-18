@@ -36,8 +36,9 @@ void removeAdresWoonplaatsAll(string removeAdres, string removeWoonplaats);
 void print();
 void addNAW(string newNaam, string newAdres, string newWoonplaats);
 
-int searchNaw(string searchAdres, string searchWoonplaats, string searchNaam);
-
+int searchNaw(string searchNaam, string searchAdres, string searchWoonplaats);
+void removeNAW(string newNaam, string newAdres, string newWoonplaats);
+void alterNAW(string oldNaam, string oldAdres, string oldWoonplaats, string newNaam, string newAdres, string newWoonplaats);
 };
 
 #endif // NAWARRAY_HPP_INCLUDED

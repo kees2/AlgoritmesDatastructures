@@ -13,12 +13,13 @@ NAWArray::NAWArray(){
     nawArray[1] = NAW("Arjon1", "Brabant", "Limburg");
     nawArray[2] = NAW("Arjon2", "Brabant", "Limburg");
     nawArray[3] = NAW("Arjon3", "Brabant", "Limburg");
-    nawArray[4] = NAW("Arjon4", "Brabant", "Limburg");
-    nawArray[5] = NAW("Arjon5", "Brabant", "Limburg");
-    nawArray[6] = NAW("Arjon6", "Brabant", "Limburg");
-    nawArray[7] = NAW("Arjon0", "Brabant", "Limburg");
-    nawArray[8] = NAW("Arjon8", "Brabant", "Limburg");
-    nawArray[9] = NAW("Arjon0", "Brabantjon", "Limburg");
+    //nawArray[4] = NAW("Arjon4", "Brabant", "Limburg");
+    nawArray[4] = NAW("Arjon5", "Brabant", "Limburg");
+    nawArray[5] = NAW("Arjon6", "Brabant", "Limburg");
+    nawArray[6] = NAW("Arjon7", "Brabant", "Limburg");
+    nawArray[7] = NAW("Arjon8", "Brabant", "Limburg");
+    nawArray[8] = NAW("Arjon9", "Brabant", "Limburg");
+    nawArray[9] = NAW("Arjon99", "Brabant", "Limburg");
 
 }
 
@@ -148,36 +149,67 @@ void NAWArray::print(){
     }
 }
 
-int NAWArray::searchNaw(string searchAdres, string searchWoonplaats, string searchNaam){
-    int currentNawIndex = searchAdresWoonplaatsNaam(searchAdres, searchWoonplaats, searchNaam);
-    int index = arraySize / 2;
-    while(index < arraySize){
-        int compare = nawArray[currentNawIndex].CompareTo(nawArray[index]);
+int NAWArray::searchNaw(string searchNaam, string searchAdres, string searchWoonplaats){
+
+    NAW tempNaw(searchNaam, searchAdres, searchWoonplaats);
+    int min = 0;
+    int max = arraySize - 1;
+    int guess = 0;
+    int compare = 0;
+    int result = -1;
+
+    while(max >= min){
+
+        guess = (min + max) / 2;
+        compare = tempNaw.CompareTo(nawArray[guess]);
         if(compare == 0){
-            return index;
+            result = guess;
+            break;
         }
         else if(compare < 0){
-            index = index / 2;
+            max = guess -1;
         }
         else{
-            index = index * 3 / 2;
+            min = guess + 1;
         }
+        cout << guess << ", " << compare << ", " << max << ", " << min << endl;
 
     }
     //return -1 als er geen naw gevonden is
-    return -1;
+    return result;
 }
 
 void NAWArray::addNAW(string newNaam, string newAdres, string newWoonplaats){
-    int index = searchNaw(newAdres,newWoonplaats, newNaam );
     NAW newNaw(newNaam, newAdres, newWoonplaats);
-    nawArray[arraySize] = newNaw;
+    int i = arraySize - 1;
+    cout << newNaw.CompareTo(nawArray[9]) << endl;
+    for (i = arraySize - 1; ( i >= 0  && (newNaw.CompareTo(nawArray[i])) == -1); i--){
+       nawArray[i + 1] = nawArray[i];
+    }
+    nawArray[i + 1] = newNaw;
     arraySize++;
 
 }
 
+void NAWArray::removeNAW(string newNaam, string newAdres, string newWoonplaats){
 
+    int index = searchNaw(newNaam, newAdres, newWoonplaats);
 
+    cout << "Index is " << index << endl;
+
+    arraySize--;
+
+    for(int i = index; i < arraySize ;i++){
+        cout << i << endl;
+        nawArray[i] = nawArray[i + 1];
+    }
+}
+
+void NAWArray::alterNAW(string oldNaam, string oldAdres, string oldWoonplaats, string newNaam, string newAdres, string newWoonplaats){
+
+    removeNAW(oldNaam, oldAdres, oldWoonplaats);
+    addNAW(newNaam, newAdres, newWoonplaats);
+}
 
 
 

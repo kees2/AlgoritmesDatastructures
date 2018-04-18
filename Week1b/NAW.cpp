@@ -1,6 +1,7 @@
 #include "NAW.hpp"
 
 #include <string.h>
+#include <iostream>
 
 NAW::NAW(string newNaam, string newAdres, string newWoonplaats){
     naam = newNaam;
@@ -72,7 +73,7 @@ int NAW::CompareTo(NAW rhsNaw)
  {
     int compare = woonplaats.compare(rhsNaw.getWoonplaats());
     if ( compare == 0 ){
-        int compare = naam.compare(rhsNaw.getNaam());
+        compare = naam.compare(rhsNaw.getNaam());
         if(compare == 0){
             return adres.compare(rhsNaw.getAdres());
         }
