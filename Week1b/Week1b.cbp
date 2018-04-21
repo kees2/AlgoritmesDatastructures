@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BinairySearch.cpp" />
+		<Unit filename="BinairySearch.hpp" />
 		<Unit filename="NAW.cpp" />
 		<Unit filename="NAW.hpp" />
 		<Unit filename="NAWArray.cpp" />

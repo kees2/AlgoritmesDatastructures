@@ -5,21 +5,16 @@
 
 NAWArray::NAWArray(){
     arraySize = 10;
-    /*for(int i = 0; i < 10; i++){
-        nawArray[i] = NAW("Arjon", "Brabant", "Limburg");
-        arraySize++;
-    }*/
-    nawArray[0] = NAW("Arjon0", "Brabant", "Limburg");
-    nawArray[1] = NAW("Arjon1", "Brabant", "Limburg");
-    nawArray[2] = NAW("Arjon2", "Brabant", "Limburg");
-    nawArray[3] = NAW("Arjon3", "Brabant", "Limburg");
-    //nawArray[4] = NAW("Arjon4", "Brabant", "Limburg");
-    nawArray[4] = NAW("Arjon5", "Brabant", "Limburg");
-    nawArray[5] = NAW("Arjon6", "Brabant", "Limburg");
-    nawArray[6] = NAW("Arjon7", "Brabant", "Limburg");
-    nawArray[7] = NAW("Arjon8", "Brabant", "Limburg");
-    nawArray[8] = NAW("Arjon9", "Brabant", "Limburg");
-    nawArray[9] = NAW("Arjon99", "Brabant", "Limburg");
+    nawArray[0] = NAW("A_Naam", "A_Adres", "A_Woonplaats");
+    nawArray[1] = NAW("B_Naam", "B_Adres", "B_Woonplaats");
+    nawArray[2] = NAW("C_Naam", "C_Adres", "C_Woonplaats");
+    nawArray[3] = NAW("D_Naam", "D_Adres", "D_Woonplaats");
+    nawArray[4] = NAW("E_Naam", "E_Adres", "E_Woonplaats");
+    nawArray[5] = NAW("F_Naam", "F_Adres", "F_Woonplaats");
+    nawArray[6] = NAW("G_Naam", "G_Adres", "G_Woonplaats");
+    nawArray[7] = NAW("H_Naam", "H_Adres", "H_Woonplaats");
+    nawArray[8] = NAW("I_Naam", "I_Adres", "I_Woonplaats");
+    nawArray[9] = NAW("J_Naam", "J_Adres", "J_Woonplaats");
 
 }
 
@@ -67,81 +62,6 @@ int NAWArray::searchAdresWoonplaatsNaam(string searchAdres, string searchWoonpla
     }
     return -1;
 }
-
-void NAWArray::removeNaamFirst(string removeNaam){
-    int id;
-    id = searchName(removeNaam);
-    for(int i = id; i < arraySize; i++){
-        nawArray[i].setNaam(nawArray[i + 1].getNaam());
-        nawArray[i].setAdres(nawArray[i + 1].getAdres());
-        nawArray[i].setWoonplaats(nawArray[i + 1].getWoonplaats());
-        cout << i << " size: " << arraySize << endl;
-    }
-    arraySize--;
-}
-
-void NAWArray::removeNaamLast(string removeNaam){
-    int id = 0;
-    for(int i = arraySize; i >= 0; i--){
-        if(nawArray[i].hasNaam(removeNaam)){
-            id = i;
-            cout << "Arjon has been found " << id << endl;
-            break;
-        }
-    }
-
-    for(int i = id; i < arraySize; i++){
-        nawArray[i].setNaam(nawArray[i + 1].getNaam());
-        nawArray[i].setAdres(nawArray[i + 1].getAdres());
-        nawArray[i].setWoonplaats(nawArray[i + 1].getWoonplaats());
-        cout << i << " size: " << arraySize << endl;
-    }
-    arraySize--;
-}
-
-void NAWArray::removeNaamAll(string removeNaam){
-    int id = searchName(removeNaam);;
-    while(id != -1){
-        for(int i = id; i < arraySize; i++){
-            if(id != arraySize -1){
-                nawArray[i].setNaam(nawArray[i + 1].getNaam());
-                nawArray[i].setAdres(nawArray[i + 1].getAdres());
-                nawArray[i].setWoonplaats(nawArray[i + 1].getWoonplaats());
-                cout << i << " size: " << arraySize << endl;
-            }
-        }
-        arraySize--;
-        id = searchName(removeNaam);
-    }
-}
-
-void NAWArray::removeAdresWoonplaatsFirst(string removeAdres, string removeWoonplaats){
-    int id = searchAdresWoonplaats(removeAdres, removeWoonplaats);
-
-    for(int i = id; i < arraySize; i++){
-        nawArray[i].setNaam(nawArray[i + 1].getNaam());
-        nawArray[i].setAdres(nawArray[i + 1].getAdres());
-        nawArray[i].setWoonplaats(nawArray[i + 1].getWoonplaats());
-    }
-    arraySize--;
-}
-
-void NAWArray::removeAdresWoonplaatsAll(string removeAdres, string removeWoonplaats){
-    int id = searchAdresWoonplaats(removeAdres, removeWoonplaats);
-    while(id != -1){
-        for(int i = id; i < arraySize; i++){
-            if(id != arraySize -1){
-                nawArray[i].setNaam(nawArray[i + 1].getNaam());
-                nawArray[i].setAdres(nawArray[i + 1].getAdres());
-                nawArray[i].setWoonplaats(nawArray[i + 1].getWoonplaats());
-                cout << i << " size: " << arraySize << endl;
-            }
-        }
-        arraySize--;
-        id = searchAdresWoonplaats(removeAdres, removeWoonplaats);
-    }
-}
-
 
 void NAWArray::print(){
     for(int i = 0; i < arraySize; i++){

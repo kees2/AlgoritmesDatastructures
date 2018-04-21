@@ -26,13 +26,6 @@ int searchWoonplaats(string searchWoonplaats);
 int searchAdresWoonplaats(string searchAdres, string searchWoonplaats);
 int searchAdresWoonplaatsNaam(string searchAdres, string searchWoonplaats, string searchNaam);
 
-
-void removeNaamFirst(string removeNaam);
-void removeNaamLast(string removeNaam);
-void removeNaamAll(string removeNaam);
-
-void removeAdresWoonplaatsFirst(string removeAdres, string removeWoonplaats);
-void removeAdresWoonplaatsAll(string removeAdres, string removeWoonplaats);
 void print();
 void addNAW(string newNaam, string newAdres, string newWoonplaats);
 

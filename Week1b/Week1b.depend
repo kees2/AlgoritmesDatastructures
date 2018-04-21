@@ -19,3 +19,29 @@
 	"NAW.hpp"
 	<iostream>
 
+1524148638 source:c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\main.cpp
+	<iostream>
+
+1524147168 c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\nawarray.hpp
+	"NAW.hpp"
+
+1524145249 c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\naw.hpp
+	<string>
+
+1524145249 source:c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\naw.cpp
+	"NAW.hpp"
+	<string.h>
+	<iostream>
+
+1524147168 source:c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\nawarray.cpp
+	"NAWArray.hpp"
+	"NAW.hpp"
+	<iostream>
+
+1524148575 source:c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\binairysearch.cpp
+	"BinairySearch.hpp"
+	<iostream>
+
+1524148572 c:\users\arjon\documents\avans hogeschool\leerjaar 2\blok 8\algorimitiek en datastructuren\algoritmesdatastructures\week1b\binairysearch.hpp
+	<iostream>
+

@@ -1,11 +1,17 @@
 #include <iostream>
-#include "NAWArray.hpp"
-
+//#include "NAWArray.hpp"
+#include "BinairySearch.hpp"
 using namespace std;
 
 int main()
 {
-    NAWArray arjonArray;
+    BinairySearch b;
+    b.print();
+
+
+
+
+    /*NAWArray arjonArray;
 
     //arjonArray.print();
 
@@ -28,6 +34,6 @@ int main()
 
     //arjonArray.addNAW("Kees", "Tjerk cafe", "den bosch");
     //cout << arjonArray.searchNaw("Tjerk cafe","den bosch", "Kees" ) << endl;
-    //arjonArray.print();
+    //arjonArray.print();*/
     return 0;
 }
