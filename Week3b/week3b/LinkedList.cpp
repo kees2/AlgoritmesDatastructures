@@ -17,6 +17,7 @@ LinkedList::LinkedList()
 	length = 0;
 	start = nullptr;
 	eind = nullptr;
+	huidige = nullptr;
 }
 
 void LinkedList::addLink(int w){
@@ -60,6 +61,28 @@ void LinkedList::insertLast(int value){
 	eind = temp;
 	length++;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void LinkedList::bubbleSort()
 {

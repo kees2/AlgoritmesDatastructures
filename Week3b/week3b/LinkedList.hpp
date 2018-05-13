@@ -21,8 +21,10 @@ class LinkedList {
 
 		void insertFirst(int value);
 		void insertLast(int value);
+
 		Link *start;
 		Link *eind;
+		Link *huidige;
 	private:
 		int length;
 };

@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1526226745 source:c:\users\kees\documents\github\algoritmesdatastructures\week3b\week3b2\link.cpp
+	"Link.hpp"
+	<iostream>
+
+1526226745 c:\users\kees\documents\github\algoritmesdatastructures\week3b\week3b2\link.hpp
+	<string>
+
+1526240220 source:c:\users\kees\documents\github\algoritmesdatastructures\week3b\week3b2\linkedlist.cpp
+	"LinkedList.hpp"
+	<string>
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1526239149 c:\users\kees\documents\github\algoritmesdatastructures\week3b\week3b2\linkedlist.hpp
+	<string>
+	"link.hpp"
+
+1526240235 source:c:\users\kees\documents\github\algoritmesdatastructures\week3b\week3b2\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"LinkedList.hpp"
+	"Link.hpp"
+
