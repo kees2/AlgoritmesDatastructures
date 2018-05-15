@@ -3,13 +3,15 @@
 #include "XMLValidator.h"
 
 using namespace std;
+#include <string>
 
 int main()
 {
 
 
    XMLValidator vali;
-   vali.validate("<naam>frits</naam>", 19);
+   char* searchText = "<persoon><naam>Donald Duck</naam><adres>Eendenplein 17</adres><woonplaats>Duckstad</woonplaats></persoon>";
+   vali.validate(searchText);
 
 
 

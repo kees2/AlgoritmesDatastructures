@@ -35,9 +35,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Queue.h" />
+		<Unit filename="include/Stack.h" />
 		<Unit filename="include/XMLValidator.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Queue.cpp" />
+		<Unit filename="src/Stack.cpp" />
 		<Unit filename="src/XMLValidator.cpp" />
 		<Extensions>
 			<code_completion />

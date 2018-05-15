@@ -14,7 +14,7 @@ Queue::~Queue()
     //dtor
 }
 
-void Queue::insert(char j) // put item at rear of queue
+void Queue::insert(string j) // put item at rear of queue
 {
     if(rear == maxSize-1) // deal with wraparound
         rear = -1;
@@ -23,17 +23,17 @@ void Queue::insert(char j) // put item at rear of queue
     numberItems++; // one more item
 }
 
-char Queue::remove() // take item from front of queue
+string Queue::remove() // take item from front of queue
 {
-    char temp = queArray[++front]; // get value and incr front
+    string temp = queArray[++front]; // get value and incr front
     if(front == maxSize) // deal with wraparound
         front = 0;
     numberItems--; // one less item
     return temp;
 }
-char Queue::peekFront() // peek at front of queue
+string Queue::peekFront() // peek at front of queue
 {
-    return queArray[front];
+    return queArray[front + 1];
 }
 int Queue::isEmpty() // true if queue is empty
 {

@@ -1,19 +1,29 @@
 # depslib dependency file v1.0
-1526400586 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\main.cpp
+1526416037 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\main.cpp
 	<iostream>
 	"Queue.h"
 	"XMLValidator.h"
+	<string>
 
-1526395977 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\queue.h
+1526411358 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\queue.h
+	<string>
 
-1526397674 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\queue.cpp
+1526411864 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\queue.cpp
 	"Queue.h"
 	<iostream>
 
-1526400450 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\xmlvalidator.cpp
+1526416021 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\xmlvalidator.cpp
 	"XMLValidator.h"
 	<iostream>
 
-1526400387 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\xmlvalidator.h
+1526415395 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\xmlvalidator.h
+	<string>
 	"Queue.h"
+	"Stack.h"
+
+1526415181 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\stack.h
+	<string>
+
+1526415985 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\stack.cpp
+	"Stack.h"
 
