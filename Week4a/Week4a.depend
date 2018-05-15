@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1526400586 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\main.cpp
+	<iostream>
+	"Queue.h"
+	"XMLValidator.h"
+
+1526395977 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\queue.h
+
+1526397674 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\queue.cpp
+	"Queue.h"
+	<iostream>
+
+1526400450 source:c:\users\kees\documents\github\algoritmesdatastructures\week4a\src\xmlvalidator.cpp
+	"XMLValidator.h"
+	<iostream>
+
+1526400387 c:\users\kees\documents\github\algoritmesdatastructures\week4a\include\xmlvalidator.h
+	"Queue.h"
+
