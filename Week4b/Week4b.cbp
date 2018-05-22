@@ -36,9 +36,11 @@
 		</Compiler>
 		<Unit filename="include/Kassa.h" />
 		<Unit filename="include/Queue.h" />
+		<Unit filename="include/Simulatie.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Kassa.cpp" />
 		<Unit filename="src/Queue.cpp" />
+		<Unit filename="src/Simulatie.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1527024877 source:c:\users\kees\documents\github\algoritmesdatastructures\week4b\main.cpp
+	<iostream>
+	"Kassa.h"
+	"Simulatie.h"
+
+1527024775 source:c:\users\kees\documents\github\algoritmesdatastructures\week4b\src\kassa.cpp
+	"Kassa.h"
+
+1527022970 c:\users\kees\documents\github\algoritmesdatastructures\week4b\include\kassa.h
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"Queue.h"
+
+1527024937 c:\users\kees\documents\github\algoritmesdatastructures\week4b\include\queue.h
+	<String>
+
+1527024922 source:c:\users\kees\documents\github\algoritmesdatastructures\week4b\src\simulatie.cpp
+	"Simulatie.h"
+
+1527024877 c:\users\kees\documents\github\algoritmesdatastructures\week4b\include\simulatie.h
+	"Kassa.h"
+
+1527017838 source:c:\users\kees\documents\github\algoritmesdatastructures\week4b\src\queue.cpp
+	"Queue.h"
+	<iostream>
+

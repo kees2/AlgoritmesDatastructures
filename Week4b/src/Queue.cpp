@@ -48,3 +48,7 @@ int Queue::size() // number of items in queue
     return numberItems;
 }
 
+int Queue::getMaxSize(){
+    return maxSize;
+}
+

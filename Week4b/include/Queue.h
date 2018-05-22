@@ -2,6 +2,8 @@
 #define QUEUE_H
 using namespace std;
 
+#include <String>
+
 class Queue
 {
     public:
@@ -13,15 +15,17 @@ class Queue
         int isEmpty();
         int isFull();
         int size();
+        int getMaxSize();
 
     protected:
 
     private:
-        int maxSize = 20;
-        string queArray[20];
+        int maxSize = 50;
+        string queArray[100];
         int front;
         int rear;
         int numberItems;
+
 
 };
 
